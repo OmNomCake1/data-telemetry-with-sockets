@@ -23,8 +23,7 @@ def client_shutdown(sig, frame):
     sys.exit(0)
     
 # listen on static DW ASUS private IP and port 12000
-# host = "192.168.50.39"
-host = "localhost"
+host = "192.168.50.39"
 port = 12000
 address = (host, port)
 

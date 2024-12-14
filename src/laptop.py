@@ -4,8 +4,7 @@
 import socket
 import sys
 
-# pi_host = "192.168.50.39"
-pi_host = "localhost"
+pi_host = "192.168.50.39"
 pi_port = 12000
 pi_address = (pi_host, pi_port)
 
