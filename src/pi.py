@@ -8,9 +8,12 @@ import signal
 import sys
 
 def send_data(connection_socket):
-    data = "Hello bello".encode()
-    connection_socket.sendall(data)
-    
+    while(True):
+        try:
+            data = input("Enter message: ").encode()
+            connection_socket.sendall(data)
+        except:
+            break        
     # close socket after finished
     connection_socket.close()
     
@@ -48,5 +51,7 @@ while (True):
         print("Could not accept socket connection")
         print(e)
         sys.exit(1)
+
+server_socket.close()
         
 
