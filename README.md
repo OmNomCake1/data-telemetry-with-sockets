@@ -1,0 +1,2 @@
+# Data Telemetry using Sockets
+This project is a test and proof of concept setting up a server on a raspberry pi 5 and a client on a laptop. It uses TCP and UDP to send telemetry data from the pi to the laptop, which is then displayed on a GUI on the laptop. This is a precursor to a future project where the pi will send robotics telemetry data like openCV frames to the computer for display. 
